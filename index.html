@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en"><!--data-bs-theme="dark"-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boostrap-practice</title>
+    <!-- ======================= css ======================= -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ================ bootstrap ======================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ============= font-awasom ================ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- ========================== remixicon ============================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="" />
+    <!-- =================== owl.carousel.min.css ===================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- =================== owl.theme.default.min.css ===================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="navbar" style="height: 74px;"></header>
+    <nav class="navbar navbar-expand-lg bg-white py-3 container-fluid shadow fixed-top">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/logo.svg" alt="logo"></a>
+                <form role="search" class="d-none d-sm-flex me-auto my-nav-form">
+                    <div>
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="nab-form border-0" placeholder="Search">
+                    </div>
+                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu-item"
+                style="padding: 2px 8px;">
+                    <span class="navbar-toggler-icon" style="font-size: medium;"></span>
+                </button>
+                <div class="collapse navbar-collapse my-nav-menu" id="nav-menu-item">
+                    <form class="mt-4 mb-2 d-sm-none my-menu-form" action="#">
+                        <div class="d-flex">
+                          <i class="fa fa-search"></i>
+                          <input class="form-control form-control-sm border-0 " placeholder="Search" type="search">
+                        </div>
+                    </form>
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">Home</a>
+                            <ul class="dropdown-menu border-0">
+                                <li class="dropdown-item"><a href="index.html" class="nav-link">Home</a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">Rooms</a></li>
+                                <li class="dropdown-item"><a href="mix.html" class="nav-link">Restaurants</a></li>
+                                <li class="dropdown-item"><a href="travel.html" class="nav-link">Travel</a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">Real Estate</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown position-static">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Template</a>
+                            <div class="dropdown-menu border-0 m-0 py-lg-0" style="width: 100%; border-radius: 0%;">
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="row p-3 pt-lg-5 ps-lg-5 pe-lg-0">
+                                            <div class="col-lg-3">
+                                                <div class="row mb-4">
+                                                    <h6 class="fw-bold ltr-spacing">HOMEPAGE</h6>
+                                                    <a href="#" class="text-muted py-1 font-sm-1">Rooms</a>
+                                                    <a href="#" class="text-muted py-1 font-sm-1">Restaurants</a>
+                                                    <a href="#" class="font-sm-1 text-muted py-1">Travel</a>
+                                                    <a href="#" class="text-muted py-1 font-sm-1">
+                                                        Real estate
+                                                        <span class="badge text-primary primary-bg">New</span>
+                                                    </a>
+                                                </div>
+                                                <div class="row">
+                                                    <h6 class="fw-bold ltr-spacing text-uppercase">Restaurants</h6>
+                                                    <a href="#" class="text-muted py-1 font-sm-1">Category- Map on the top</a>
+                                                    <a href="#" class="text-muted py-1 font-sm-1">Category- Map on the right</a>
+                                                    <a href="#" class="text-muted py-1 font-sm-1">Category- no map</a>
+                                                    <a href="#" class="text-muted py-1 font-sm-1">Restaurant detail</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="row pb-4">
+                                                    <h6 class="fw-bold text-uppercase ltr-spacing">rooms</h6>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Category- Map on the top</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Category- Map on the right</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Category- no map</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Room detail</a>
+                                                </div>
+                                                <div class="row pb-4">
+                                                    <h6 class="fw-bold text-uppercase ltr-spacing">blog</h6>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Blog</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Post</a>
+                                                </div>
+                                                <div class="row">
+                                                    <h6 class="fw-bold text-uppercase ltr-spacing">pages</h6>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Comparison</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Team</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Contact</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="row pb-4">
+                                                    <h6 class="fw-bold ltr-spacing text-uppercase">pages</h6>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Pricing</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Text page</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">F.A.Q.s</a>
+                                                    <a href="#" class="text-muted font-sm-1 pt-1">Coming soon</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">404 page</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">
+                                                        Knowledge Base
+                                                        <span class="badge text-primary primary-bg">New</span>
+                                                    </a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">
+                                                        Knowledge Base - Topic
+                                                        <span class="badge primary-bg text-primary">New</span>
+                                                    </a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">
+                                                        Terms & Conditions
+                                                        <span class="badge primary-bg text-primary">New</span>
+                                                    </a>
+                                                </div>
+                                                <div class="row">
+                                                    <h6 class="fw-bold ltr-spacing">HOST</h6>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Add new listing - 6 pages</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Bookings - list view</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="row">
+                                                    <h6 class="fw-bold ltr-spacing text-uppercase">user</h6>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Profile</a>
+                                                    <a href="account.html" class="text-muted font-sm-1 py-1">Account</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Personal info -forms</a>
+                                                    <a href="#" class="text-muted font-sm-1 pt-1">Password & security - forms</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Sign in</a>
+                                                    <a href="sign up.html" class="text-muted font-sm-1 py-1">Sign up</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Booking process - 4 pages</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Booking - grid view</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">Booking detail</a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">
+                                                        Invoice
+                                                        <span class="badge text-primary primary-bg">New</span>
+                                                    </a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">
+                                                        Messages
+                                                        <span class="badge text-primary primary-bg">New</span>
+                                                    </a>
+                                                    <a href="#" class="text-muted font-sm-1 py-1">
+                                                        Message Detail
+                                                        <span class="badge primary-bg text-primary">New</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row d-none d-lg-flex pe-0 ps-lg-5" style="background-color: #f1f1f1;">
+                                            <div class="col-xl-3 col-lg-6 d-flex align-items-center py-4">
+                                                <div class="text-primary primary-bg d-flex justify-content-center align-items-center rounded-circle me-3" style="width: 40px; height: 40px;">
+                                                    <i class="fa fa-map-location-dot"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="fw-bold text-uppercase ltr-spacing">secure payment</h6>
+                                                    <p class="text-muted font-sm mb-0">Secure Payment</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-6 d-flex align-items-center py-4">
+                                                <div class="text-primary primary-bg d-flex justify-content-center align-items-center rounded-circle me-3" style="width: 40px; height: 40px;">
+                                                    <i class="fa fa-map-location-dot"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="fw-bold text-uppercase ltr-spacing">secure payment</h6>
+                                                    <p class="text-muted font-sm mb-0">Secure Payment</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-6 d-flex align-items-center py-4">
+                                                <div class="text-primary primary-bg d-flex justify-content-center align-items-center rounded-circle me-3" style="width: 40px; height: 40px;">
+                                                    <i class="fa fa-map-location-dot"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="fw-bold text-uppercase ltr-spacing">secure payment</h6>
+                                                    <p class="text-muted font-sm mb-0">Secure Payment</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-6 d-flex align-items-center py-4">
+                                                <div class="text-primary primary-bg d-flex justify-content-center align-items-center rounded-circle me-3" style="width: 40px; height: 40px;">
+                                                    <i class="fa fa-map-location-dot"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h6 class="fw-bold text-uppercase ltr-spacing">secure payment</h6>
+                                                    <p class="text-muted font-sm mb-0">Secure Payment</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-lg-3 d-none d-lg-block ps-0">
+                                    <img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/photo/photo-1521170665346-3f21e2291d8b.jpg" alt="" class="bg-image">
+                                   </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Docs</a>
+                            <ul class="dropdown-menu border-0 dropdown-menu-end">
+                                <h2 class="dropdown-header" style="font-size: medium; text-transform: uppercase; letter-spacing: .1rem; opacity: .6;">Documentation</h2>
+                                <li class="dropdown-item"><a href="#" class="nav-link">Introduction</a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">Directory structure</a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">Gulp</a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">Customizing CSS</a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">Credits</a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">Changelog</a></li>
+                                <div class="dropdown-divider"></div>
+                                <h2 class="dropdown-header" style="opacity: .6; letter-spacing: .1rem; text-transform: uppercase; font-size: medium;">components</h2>
+                                <li class="dropdown-item"><a href="#" class="nav-link">Bootstrap</a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">Theme</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="sign in.html" class="nav-link">Sign in</a></li>
+                        <li class="nav-item"><a href="sign up.html" class="nav-link">Sign up</a></li>
+                        <li class="nav-item mt-3 mt-lg-0 ms-lg-3 d-lg-none d-xl-inline-block">
+                            <button href="#" class="btn btn-primary">ADD A LISTING</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    <div class="tool-icon">
+        <button class="btn btn-primary rounded-0 d-none d-lg-block collapsed" data-bs-toggle="collapse" data-bs-target="#tool-menu"><i class="fa-solid fa-screwdriver-wrench"></i></button>
+        <div class="collapse" id="tool-menu">
+            <div class="p-4">
+                <h6 class="fw-bold pb-3">SELECT THEME COLOUR</h6>
+                <form action="" class="mb-3">
+                    <select name="" id="" class="form-select">
+                        <option selected>select color variant</option>
+                        <option value="color_1">blue</option>
+                        <option value="color_2">pink</option>
+                        <option value="color_3">green</option>
+                        <option value="color_4">red</option>
+                        <option value="color_5">violet</option>
+                        <option value="color_6">sea</option>
+                    </select>
+                </form>
+                <p class="text-muted mb-0">Stylesheet switching in this demo is done with JavaScript and can cause a blink while page loads. This will not happen in your production code.</p>
+            </div>
+        </div>
+    </div>
+    <!-- ===================== header section-1 ================== -->
+    <div class="section-1 bg-cover d-flex align-items-center">
+        <div class="container text-white py-lg-8 py-6">
+            <div class="row">
+                <div class="col-xl-8">
+                    <h1 class="display-2 fw-bold">Let us guide you home</h1>
+                    <p class="mb-6">Uncover the best offer on the real estate market</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ====================== section-2 ============ -->
+    <div class="section-2 container">
+        <ul class="nav nav-tabs border-0">
+            <li class="nav-item"><a href="#buy" class="nav-link active" data-bs-toggle="tab">Buy</a></li>
+            <li class="nav-item"><a href="#rent" class="nav-link" data-bs-toggle="tab">Rent</a></li>
+            <li class="nav-item"><a href="#sell" class="nav-link" data-bs-toggle="tab">Sell</a></li>
+        </ul>
+        <div class="tab-content">
+            <form action="" class="tab-pane active" id="buy">
+                <div class="row">
+                    <div class="col-lg-4 pb-lg-0 pb-3">
+                        <select name="" id="" class="form-select">
+                            <option>Location</option>
+                            <option value="1">San Francisco</option>
+                            <option value="2">Los Angeles</option>
+                            <option value="3">Santa Monica</option>
+                            <option value="4">San Diego</option>
+                            <option value="5">Fresno</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-lg-0 pb-3">
+                        <select name="" id="" class="form-select">
+                            <option>Type</option>
+                            <option value="1">Duplex</option>
+                            <option value="type_2">Appartment</option>
+                            <option value="type_3">House</option>
+                            <option value="type_4">Land</option>
+                            <option value="type_5">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-lg-0 pb-3">
+                        <select name="" id="" class="form-select">
+                            <option>Price</option>
+                            <option value="1">$5,000</option>
+                            <option value="2">$10,000</option>
+                            <option value="3">$25,000</option>
+                            <option value="4">$50,000</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 d-grid">
+                        <button class="btn btn-primary text-transform-uppercase">search</button>
+                    </div>
+                </div>
+            </form>
+            <form action="" class="tab-pane fade" id="rent">
+                <div class="row">
+                    <div class="col-lg-4 pb-lg-0 pb-3">
+                        <select name="" id="" class="form-select">
+                            <option>Location</option>
+                            <option value="1">San Francisco</option>
+                            <option value="2">Los Angeles</option>
+                            <option value="3">Santa Monica</option>
+                            <option value="4">San Diego</option>
+                            <option value="5">Fresno</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-lg-0 pb-3">
+                        <select name="" id="" class="form-select">
+                            <option>Type</option>
+                            <option value="1">Duplex</option>
+                            <option value="type_2">Appartment</option>
+                            <option value="type_3">House</option>
+                            <option value="type_4">Land</option>
+                            <option value="type_5">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-lg-0 pb-3">
+                        <select name="" id="" class="form-select">
+                            <option>Price</option>
+                            <option value="1">$5,000</option>
+                            <option value="2">$10,000</option>
+                            <option value="3">$25,000</option>
+                            <option value="4">$50,000</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 d-grid">
+                        <button class="btn btn-primary text-transform-uppercase">search</button>
+                    </div>
+                </div>
+            </form>
+            <form action="" class="tab-pane fade" id="sell">
+                <div class="row">
+                    <div class="col-lg-4 pb-lg-0 pb-3">
+                        <select name="" id="" class="form-select">
+                            <option>Location</option>
+                            <option value="1">San Francisco</option>
+                            <option value="2">Los Angeles</option>
+                            <option value="3">Santa Monica</option>
+                            <option value="4">San Diego</option>
+                            <option value="5">Fresno</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-lg-0 pb-3">
+                        <select name="" id="" class="form-select">
+                            <option>Type</option>
+                            <option value="1">Duplex</option>
+                            <option value="type_2">Appartment</option>
+                            <option value="type_3">House</option>
+                            <option value="type_4">Land</option>
+                            <option value="type_5">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-lg-0 pb-3">
+                        <select name="" id="" class="form-select">
+                            <option>Price</option>
+                            <option value="1">$5,000</option>
+                            <option value="2">$10,000</option>
+                            <option value="3">$25,000</option>
+                            <option value="4">$50,000</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 d-grid">
+                        <button class="btn btn-primary text-transform-uppercase">search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<!-- ====================== section-3 ======================== -->
+    <div class="section-3 py-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="subtitle mb-2">FIND YOUR HOME TODAY</p>
+                    <h2 class="fw-bold">Featured listings around you</h2>
+                </div>
+                <div class="col-md-4 d-md-flex align-items-center justify-content-end">
+                    <a href="#" class="text-muted text-sm">See all featured listings
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- =========== card =============== -->
+        <div class="container-fluid pt-5 ">
+            <div class="row py-3">
+                <div class="owl-carousel owl-theme p-0">
+                    <!-- =============== card-1 ============= -->
+                    <div class="ps-2 pe-3 py-5 hover-animate">
+                        <div class="card border-0 shadow-all">
+                            <div class="card-img-top">
+                                <img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/photo/photo-1512917774080-9991f1c4c750.jpg" alt="..." class="img-fluid">
+                                <a href="#"></a>
+                                <div class="card-img-overlay">
+                                    <a href="#" class="heart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                    </svg></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title fw-bold">
+                                    <a href="#">Modern Apt - Vibrant<br>Neighborhood!</a>
+                                </h6>
+                                <p class="card-subtitle secondary-color mb-1" style="font-size: 14px;"><i class="fa fa-map-marker me-1" style="opacity: .50;"></i> San Francisco</p>
+                                <p class="text-muted text-uppercase" style="font-size: 15px;">house</p>
+                                <p class="d-flex mb-0 card-btm-i">
+                                    <span>
+                                        <i class="fa fa-ruler-combined text-primary"></i>
+                                        350 m<sup>2</sup>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-bed text-primary"></i>
+                                        3
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-bath text-primary"></i>
+                                        2
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-tag text-primary"></i>
+                                        $150k
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============== card-2 ============= -->
+                    <div class="ps-2 pe-3 py-5 hover-animate">
+                        <div class="card border-0 shadow-all">
+                            <div class="card-img-top">
+                                <img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/photo/photo-1494526585095-c41746248156.jpg" alt="" class="img-fluid">
+                                <a href="#"></a>
+                                <div class="card-img-overlay">
+                                    <a href="#" class="heart">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title fw-bold"><a href="#">Sunny Private Stuio-<br>Apartment</a></h6>
+                                <p class="secondary-color card-subtitle mb-1" style="font-size: 14px;">
+                                    <i class="fa fa-map-marker me-1" style="opacity: .50;"></i>
+                                    San Francisco
+                                </p>
+                                <p class="text-muted" style="font-size: 15px;">HOUSE</p>
+                                <p class="d-flex justify-content-between mb-0 card-btm-i">
+                                    <span>
+                                        <i class="fa fa-ruler-combined text-primary"></i>
+                                        50m<sup>2</sup>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-bed text-primary"></i>
+                                        4
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-bath text-primary"></i>
+                                        3
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-tag text-primary"></i>
+                                        $120k
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============== card-3 ============= -->
+                    <div class="ps-2 pe-3 py-5 hover-animate">
+                        <div class="card border-0 shadow-all">
+                            <div class="card-img-top">
+                                <img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/photo/photo-1522771739844-6a9f6d5f14af.jpg" alt="" class="img-fluid">
+                                <a href="#"></a>
+                                <div class="card-img-overlay">
+                                    <a href="#" class="heart">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><a href="#" class="fw-bold">Mid-Century Modern Garden<br>Paradise</a></h6>
+                                <p class="secondary-color card-subtitle mb-1" style="font-size: 14px;"><i class="fa fa-map-marker me-1" style="opacity: .50;"></i>
+                                    San Francisco
+                                </p>
+                                <p class="text-muted" style="font-size: 15px;">HOUSE</p>
+                                <p class="card-btm-i d-flex mb-0">
+                                    <span>
+                                        <i class="fa fa-ruler-combined text-primary"></i>
+                                        85 m<sup>2</sup>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-bed text-primary"></i>
+                                        2
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-bath text-primary"></i>
+                                        1
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-tag text-primary"></i>
+                                        $65k
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========== card-4 ============== -->
+                    <div class="ps-2 pe-3 py-5 hover-animate">
+                        <div class="card border-0 shadow-all">
+                            <div class="card-img-top">
+                                <img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/photo/photo-1488805990569-3c9e1d76d51c.jpg" alt="" class="img-fluid">
+                                <a href="#"></a>
+                                <div class="card-img-overlay">
+                                    <a href="#" class="heart">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title fw-bold">
+                                    <a href="#">Broklyn Life, Easy to<br>Manhattan</a>
+                                </h6>
+                                <p class="secondary-color card-subtitle mb-1" style="font-size: 14px;">
+                                    <i class="fa fa-map-marker me-1" style="opacity: .50;"></i>
+                                    San Francisco
+                                </p>
+                                <p class="text-muted" style="font-size: 15px;">APARTMENT</p>
+                                <p class="card-btm-i d-flex mb-0">
+                                    <span>
+                                        <i class="fa fa-ruler-combined text-primary"></i>
+                                        85 m<sup>2</sup>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-bed text-primary"></i>
+                                        2
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-bath text-primary"></i>
+                                        1
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-tag text-primary"></i>
+                                        $65k
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================== section-4 ===================== -->
+    <div class="container-fluid py-6 section-4" style="background-color: #F8F9FA;">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8">
+                    <p class="text-primary subtitle mb-0">Most popular cities</p>
+                    <h2 class="fw-bold">What's on our radar</h2>
+                </div>
+                <div class="col-md-4 d-md-flex justify-content-end align-items-center">
+                    <a href="#" class="text-muted">See all cities <i class="fa fa-angles-right"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mb-4">
+                    <div class="card border-0 hover-animate" style="background: url(https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/photo/photo-1449034446853-66c86144b0ad.jpg);">
+                        <a href="#"></a>
+                        <div class="d-flex align-items-center justify-content-center text-white py-6 py-lg-8">
+                            <h3 class="mb-0 text-uppercase fw-bold t-shadow">San Francisco</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 hover-animate" style="background: url(https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/photo/photo-1429554429301-1c7d5ae2d42e.jpg);">
+                        <a href="#"></a>
+                        <div class="d-flex align-items-center justify-content-center text-white py-6 py-lg-8">
+                            <h3 class="text-uppercase fw-bold mb-0 t-shadow">Los Angeles</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 hover-animate" style="background: url(https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/photo/photo-1523430410476-0185cb1f6ff9.jpg);">
+                        <a href="#"></a>
+                        <div class="d-flex align-items-center justify-content-center text-white py-6 py-lg-8">
+                            <h3 class="text-uppercase mb-0 fw-bold t-shadow">Santa monica</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 hover-animate" style="background: url(https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/photo/photo-1505245208761-ba872912fac0.jpg);">
+                        <a href="#"></a>
+                        <div class="d-flex text-uppercase justify-content-center text-white py-6 py-lg-8">
+                            <h3 class="text-uppercase fw-bold mb-0 t-shadow">san Diego</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 hover-animate" style="background: url(https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/photo/photo-1519867850-74775a87e783.jpg);">
+                        <a href="#"></a>
+                        <div class="d-flex text-uppercase justify-content-center text-white py-6 py-lg-8">
+                            <h3 class="text-uppercase fw-bold mb-0 t-shadow">Fresno</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================== section-5 ===================== -->
+    <div class="section-5">
+        <div class="container py-6">
+            <div class="row">
+                <p class="subtitle mb-0 secondary-color">Why us?</p>
+                <h2 class="fw-bold mb-5">Discover the best investment opportunities around you</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 mb-3 mb-xl-0 col-sm-6">
+                    <div class="primary-bg rounded-circle mb-3 d-flex justify-content-center align-items-center" style="width: 65px; height: 65px;">
+                        <i class="fa-solid fa-map-location-dot text-primary" style="font-size: 28px;"></i>
+                    </div>
+                    <h6 class="subtitle2">Find the best investment</h6>
+                    <p class="text-muted font-sm-2">
+                        One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                    </p>
+                </div>
+                <div class="col-xl-3 col-lg-4 mb-3 mb-xl-0 col-sm-6">
+                    <div class="secondary-bg rounded-circle mb-3 d-flex justify-content-center align-items-center" style="width: 65px; height: 65px;">
+                        <i class="fa-regular fa-credit-card secondary-color" style="font-size: 28px;"></i>
+                    </div>
+                    <h6 class="subtitle2">BOOK YOUR SEATS</h6>
+                    <p class="text-muted font-sm-2">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit
+                    </p>
+                </div>
+                <div class="col-xl-3 col-lg-4 mb-3 mb-xl-0 col-sm-6">
+                    <div class="primary-bg rounded-circle mb-3 d-flex justify-content-center align-items-center" style="width: 65px; height: 65px;">
+                        <i class="fa-solid fa-house-chimney text-primary" style="font-size: 28px;"></i>
+                    </div>
+                    <h6 class="subtitle2">PURCHASE A PROPERTY</h6>
+                    <p class="text-muted font-sm-2">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                    </p>
+                </div>
+                <div class="col-xl-3 col-lg-4 mb-3 mb-xl-0 col-sm-6">
+                    <div class="secondary-bg rounded-circle mb-3 d-flex justify-content-center align-items-center" style="width: 65px; height: 65px;">
+                        <i class="fa-solid fa-utensils secondary-color" style="font-size: 28px;"></i>
+                    </div>
+                    <h6 class="subtitle2">ENJOY YOUR EVENING</h6>
+                    <p class="text-muted font-sm-2">
+                        His room, a proper human room although a little too small, lay peacefully between its four familiar
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================== section-6 ===================== -->
+    <div class="section-6">
+        <div class="container rounded-3 py-6 px-5" 
+        style="background-color: #F8F9FA; box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .1);">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <p class="secondary-color subtitle mb-1">Start using Directory today</p>
+                    <p style="font-size: larger;">Directory is the best way to find & discover great local businesses</p>
+                    <p class="text-muted mb-0">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed in</p>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center" style="flex-direction: column;">
+                    <button href="#" class="subtitle btn btn-lg btn-primary mb-2" style="height: 45px;">create your account</button>
+                    <p class="text-muted">It's free!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================== section-7 ===================== -->
+    <div class="section-7">
+        <div class="container py-6">
+            <div class="row pb-md-5">
+                <div class="col-md-8">
+                    <p class="subtitle secondary-color mb-1">
+                        Who are we?
+                    </p>
+                    <h2 class="fw-bold mb-md-0">Meet our team</h2>
+                </div>
+                <div class="col-md-4 d-md-flex justify-content-end align-items-center">
+                    <a href="#" class="text-muted font-sm-2">Meet us all <i class="fa fa-angles-right font-sm-sm"></i></a>
+                </div>
+            </div>
+            <div class="row align-items-end">
+                <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
+                    <div class="card border-0 bg-transparent hover-animate">
+                        <a href="#" class="position-relative">
+                            <img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/avatar/agent-1.png" alt="" class="card-img-top">
+                            <div class="team-circle secondary-bg"></div>
+                        </a>
+                        <div class="card-body bg-white d-flex align-items-center justify-content-center rounded-3" style="flex-direction: column; box-shadow: 0 0 1rem rgba(0 , 0, 0, .15);">
+                            <h6>Adware Webb</h6>
+                            <p class="text-muted font-sm-sm mb-0 text-uppercase">ceo & founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
+                    <div class="card border-0 bg-transparent hover-animate">
+                        <a href="#" class="position-relative">
+                            <img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/avatar/agent-2.png" alt="" class="card-img-top">
+                            <div class="team-circle secondary-bg"></div>
+                        </a>
+                        <div class="card-body bg-white d-flex align-items-center justify-content-center rounded-3" style="flex-direction: column; box-shadow: 0 0 1rem rgba(0 , 0, 0, .15);">
+                            <h6>Aguilar Bauer</h6>
+                            <p class="text-muted font-sm-sm mb-0 text-uppercase">Co-founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
+                    <div class="card border-0 bg-transparent hover-animate">
+                        <a href="#" class="position-relative">
+                            <img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/avatar/agent-3.png" alt="" class="card-img-top">
+                            <div class="team-circle secondary-bg"></div>
+                        </a>
+                        <div class="card-body bg-white d-flex align-items-center justify-content-center rounded-3" style="flex-direction: column; box-shadow: 0 0 1rem rgba(0 , 0, 0, .15);">
+                            <h6>Fisher Bauer</h6>
+                            <p class="text-muted font-sm-sm mb-0 text-uppercase">cto</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
+                    <div class="card border-0 bg-transparent hover-animate">
+                        <a href="#" class="position-relative">
+                            <img src="team-member4.png" alt="" class="card-img-top">
+                            <div class="team-circle secondary-bg"></div>
+                        </a>
+                        <div class="card-body bg-white d-flex align-items-center justify-content-center rounded-3" style="flex-direction: column; box-shadow: 0 0 1rem rgba(0 , 0, 0, .15);">
+                            <h6>Mahmud Hasan</h6>
+                            <p class="text-muted font-sm-sm mb-0 text-uppercase">community</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================== section-8 ===================== -->
+    <div class="section-8" style="background-color: #F8F9FA;">
+        <div class="container py-6">
+            <div class="row text-center">
+                <h5 class="fw-bold subtitle mb-5">AS SEEN ON</h5>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4 mb-md-0 mb-2">
+                    <a href="#"><img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/brand/brand-1.svg" alt="" style="width: 100px; opacity: .60;"></a>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-md-0 mb-2">
+                    <a href="#"><img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/brand/brand-5.svg" alt="" style="width: 100px; opacity: .60;"></a>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-md-0 mb-2">
+                    <a href="#"><img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/brand/brand-6.svg" alt="" style="width: 100px; opacity: .60;"></a>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-md-0 mb-2">
+                    <a href="#"><img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/brand/brand-2.svg" alt="" style="width: 100px; opacity: .60;"></a>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-md-0 mb-2">
+                    <a href="#"><img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/brand/brand-3.svg" alt="" style="width: 100px; opacity: .60;"></a>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-md-0 mb-2">
+                    <a href="#"><img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/brand/brand-4.svg" alt="" style="width: 100px; opacity: .60;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================== section-9 footer ===================== -->
+    <div class="footer py-6" style="background-color: #E9ECEF;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-lg-0 mb-5">
+                    <a href="index.html"><img src="https://d19m59y37dris4.cloudfront.net/directory/2-0-2/img/logo.svg" alt=""></a>
+                    <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <div class="foot-social-icon">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 mb-lg-0 mb-5">
+                    <h6 class="subtitle mb-3">rentals</h6>
+                    <ul class="p-0 mb-0">
+                        <li class="mb-1"><a href="#" class="text-muted">Rooms</a></li>
+                        <li class="mb-1"><a href="#" class="text-muted">Map on top</a></li>
+                        <li class="mb-1"><a href="#" class="text-muted">Side map</a></li>
+                        <li class="mb-1"><a href="#" class="text-muted">No map</a></li>
+                        <li class="mb-1"><a href="#" class="text-muted">Room detail</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6 mb-lg-0 mb-5">
+                    <h6 class="subtitle">pages</h6>
+                    <ul class="p-0 mb-0">
+                        <li class="mb-1"><a href="#" class="text-muted">Comparison</a></li>
+                        <li class="mb-1"><a href="#" class="text-muted">Team</a></li>
+                        <li class="mb-1"><a href="#" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-lg-0">
+                    <h6 class="subtitle mb-3">daily offers & discounts</h6>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vero ratione!</p>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" placeholder="Your Email Address" class="form-control bg-transparent border-end-0 border-dark">
+                            <button class="btn border-dark border-start-0"><i class="fa-solid fa-paper-plane" style="font-size: 20px;"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================== sub-footer ================= -->
+    <div class="container-fluid" style="background-color: #343a40;">
+        <div class="row py-5 text-center">
+            <p class="text-white">© 2021, Your company. All rights reserved.
+            </p>
+            <div class="foot-card-icon">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================== jquery ================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- =================== owl.carousel.min.js ================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        540:{
+            items:2
+        },
+        960:{
+            items:3,
+            stagePadding: 45
+        },
+        1140:{
+            items:4,
+            stagePadding: 45
+        }
+    }
+})
+    </script>
+</body>
+</html>
